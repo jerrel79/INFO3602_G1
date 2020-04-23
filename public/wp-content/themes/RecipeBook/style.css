@@ -1,0 +1,488 @@
+/*
+Theme name: RecipeBook
+Author: Peter
+Version: 1.1
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+#myCarousel{
+    padding-top:30px;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+  }
+  
+  .hero-image {
+    background-image: url("../images/Recipebook.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  #RecipesAndTips{
+      padding: 4rem 4rem;
+  }
+
+  .RecipeAndTipsButtons{
+      padding: 4rem 4rem;
+  }
+
+  .btnspacing{
+      margin-top: 30px;
+  }
+
+  #TryRecipes{
+    margin-right:220px;
+  }
+
+  #GetTips{
+      margin-left:220px;
+      
+  }
+
+
+/*About Section*/
+#AboutSection{
+    padding-top: 30px;
+    padding-bottom:100px;
+}
+.section_subtitle{
+    margin-bottom: 7px;
+    padding-left: 7px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    border-left: 3px solid #bfa67a;
+    font-size: 700;
+    font-family: tahoma;
+}
+
+.section_main_title{
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 1.27;
+    font-weight: 300;
+    color:black;
+}
+
+.section_main_title strong{
+    font-weight: 600;
+}
+
+#AboutPicture{
+    width:30rem;
+}
+.about-box{
+    margin-right: 0;
+    margin-top: 0;
+    position: relative;
+    display: block;
+}
+
+.row{
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+
+/*Recipe Styles*/
+
+.main-article-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.main-article-category:hover, .main-article-title:hover, .author-name{
+    text-decoration: underline;
+
+}
+
+.Recipes .row{
+    padding:50px;
+}
+
+
+
+
+/*Recipe Styles*/
+
+
+  /* footer styles */
+  p{
+      color:#999;
+      line-height: 25px;
+  }
+
+  h2, h3{
+      color: #fff;
+  }
+
+  .footer-top{
+      background-color: #111;
+      padding: 80px 0;
+  }
+
+  .segment-one h3{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #fff;
+      letter-spacing:3px;
+      margin: 10px 0;
+
+  }
+
+  .segment-two h2{
+      color: #fff;
+      font-family: Poppins;
+      text-transform: uppercase;;
+  }
+
+  .segment-two h2:before{
+      content: '|';
+      color: #c65039;
+      padding-right: 10px;
+  }
+
+  .segment-two ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  .segment-two li{
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      line-height: 40px;
+  }
+
+  .segment-two ul li a{
+      color: #999;
+      text-decoration: none;
+  }
+
+
+  .segment-three h2{
+      color: #fff;
+      font-family: Poppins;
+      text-transform: uppercase;
+  }
+
+  .segment-three h2:before{
+      content: '|';
+      color: #cc6655;
+      padding-right:10px;
+  }
+
+  .segment-three a{
+      background: #494848;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+
+  .segment-three a i {
+      font-size: 20px;
+      color: #fff;
+      padding: 10px 12px;
+  }
+
+  .segment-four h2{
+      color: #fff;
+      font-family: Poppins;
+      text-transform: uppercase;
+  }
+
+  .segment-three h2:before{
+    content: '|';
+    color: #cc6655;
+    padding-right:10px;
+}
+
+/*responsive css*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+
+    #GetTips, #TryRecipes,.col-sm-3, .col-md-6{
+        display:block;
+        width:100%;
+        margin:auto;
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 707px){
+    .sm-mb-30{
+        margin-bottom: 30px;
+    }
+
+    .footer-top{
+        padding: 50px 0;
+    }
+
+    #GetTips, #TryRecipes,.col-sm-3, .col-md-6{
+        display:block;
+        width:100%;
+        margin:auto;
+        margin-top:20px;
+        
+    }
+   
+}
+
+
+/*carousel styles*/
+ /* Make the image fully responsive */
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /*button styles*/
+  .btn, .btn-info a{
+      text-decoration: none;
+      margin-bottom:15px;
+      margin-top: 30px;
+  }
+
+  .author-name{
+      text-decoration: none;
+  }
+
+  #blogbuttons a{
+      color:white;
+  }
+  
+
+  .pagination a, .prev, .next, .page-numbers{
+      display: inline-block;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        background-color: rgb(77, 133, 143);
+        color: white;
+  }
+
+  .pagination{
+      margin-left:60px;
+  }
+
+  .image-post img{
+      width: 100%;
+      height: 30rem;
+      
+  }
+
+  
+  /*Pagination for Pages*/
+  
+  .pagination-pages a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination-pages a.active {
+    background-color: rgb(72, 134, 136);
+    color: white;
+    border: 1px solid rgb(72, 134, 136);
+  }
+  
+  .pagination-pages a:hover:not(.active) {background-color: #ddd;}
+
+  /*Hero Image on Page*/
+  .hero-image-pages {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text-pages {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .hero-text-pages h1{
+    font-size: 100px;
+  }
+
+  .HomePostsTips img{
+      width:100%;
+      height:200px;
+      margin:auto;
+      display:block;
+      border-radius: 30%;
+  }
+ 
+
+  .HomePosts img{
+    width:70%;
+    height:600px;
+    margin:auto;
+    display:block;
+    border-radius: 30%;
+}
+
+  #FrontPageRecipe{
+      width:30rem;
+
+  }
+
+  #RecipesAndTips h3{
+      color:black;
+  }
+
+  #RecipesAndTips p{
+      font-size: 1.4rem;
+      padding:1.3rem;
+  }
+
+  
+  /*Styles Test for Blog Structure for front page*/
+  * {
+    box-sizing: border-box;
+  }
+
+  
+  
+  /* Add a gray background color with some padding */
+  .FrontBody{
+    font-family: Arial;
+    padding: 20px; 
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+  /*Page Menu Navigation*/
+  .vertical-menu {
+    width: 200px;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgb(146, 199, 212);
+  }
+  
+  .vertical-menu a.active {
+    background-color: rgb(59, 158, 240);
+    color: white;
+  }
+
+  
