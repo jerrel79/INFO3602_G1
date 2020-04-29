@@ -16,8 +16,8 @@
     <title>Recipebook</title>
 </head>
 
-<body>
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<body style="background-color: #F5F5F5;">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark w-100 ">
             <!-- Brand/logo -->
             <a class="navbar-brand" href="<?php echo site_url();?>">Recipebook</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
@@ -27,15 +27,32 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                   <!-- Links -->
                   <ul class="navbar-nav md-auto">
-                      <li class="nav-item">
+                      <li class="nav-item px-3">
                         <a class="nav-link" href="<?php echo site_url('/about-us'); ?>">About</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item px-3">
                         <a class="nav-link" href="<?php echo get_post_type_archive_link('recipes'); ?>">Recipes</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item px-3">
                         <a class="nav-link" href="<?php echo get_post_type_archive_link('tips');  ?>">Kitchen Tips</a>
                       </li>
+                      
+               
+                            <?php
+                              if(is_user_logged_in() ) {
+                                  global $current_user;
+                                  get_currentuserinfo();
+                                  echo '<li  class="nav-item text-right px-3"><span class="navbar-text">Hello, '. $current_user->display_name . "</span></li>";
+                                  echo '<li class="nav-item px-3"><a class="nav-link" href="/wp-login.php?action=logout">Logout</a></li>';
+                              } 
+                              else {
+                                 echo '<a class="nav-link px-3" href="/wp-login.php?action=login">Login</a>';
+                                 echo '<li class="nav-item"><a class="nav-link px-3" href="<?php echo wp_registration_url(); ?>">Sign Up</a></li>';
+                              }
+                                                            ?>
+                          
+                          
+                        
                   </ul>
             </div> 
       </nav>

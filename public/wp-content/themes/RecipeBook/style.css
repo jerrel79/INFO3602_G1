@@ -52,6 +52,10 @@ body, html {
     cursor: pointer;
   }
   
+.hero-text-pages{
+    font-size: 150px;
+    font-weight: 600;
+}
   .hero-text button:hover {
     background-color: #555;
     color: white;

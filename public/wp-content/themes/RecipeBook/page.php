@@ -1,15 +1,24 @@
 <?php
     get_header();
 ?>
-<div class="hero-image-pages" style='background-image: url("<?php echo get_theme_file_uri('./images/pagesBG.jpg');?>)'>
-  <div class="hero-text-pages">
-    <h1><?php the_title(); ?> </h1>
-  </div>
+<div class="hero-image" style='background-image: url("<?php echo get_theme_file_uri('./images/Recipebook.png');?>)'>
+        <div class="hero-text">
+          
+        </div>
 </div>
 
 
+<div class="FrontBody">  
+                <div class="col-sm-12">
+                            <div class="light-font">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a class="white-text" href="<?php echo site_url();?>">Home</a></li>
+                                    <li class="breadcrumb-item active"><?php the_title()?></li>
+                                </ol>
 
-<div class="FrontBody">        
+                             </div>
+                </div>
+
         <div class="row">
           <div class="leftcolumn">
           <?php             
@@ -22,13 +31,13 @@
                           <div class="row">
                             <div class="col-sm-6">
                               <div class="section_title">
-                                <div class="section_subtitle">......</div>
+                                <h4><?php the_title();?></h4>
                                   <!-- <h2 class="section_main_title">We Provide Easy Recipes for your most interesting food cravings!</h2> -->
                                 </div>
                               </div>
                             </div>
 
-                            <div class="about-item">
+                            <div class="">
                               <p>
                                 <?php the_content();?>
                              </p>
@@ -44,17 +53,6 @@
 ?>
           </div>
       
-          <div class="rightcolumn">
-            <div class="card">
-            <div class="vertical-menu">
-              <a href="#" class="active">Home</a>
-              <a href="<?php echo get_post_type_archive_link('recipes'); ?>">Recipes</a>
-              <a href="<?php echo get_post_type_archive_link('tips');  ?>">Recipe Tips</a>
-            </div>
-
-            </div>
-            
-          </div>
         </div>
         
     

@@ -20,6 +20,7 @@
     add_image_size('recipesPortrait',1280, 1280, true);
     add_image_size('tipsLandscape',400, 260, true);         
     add_image_size('tipsPortrait',480, 650, true); 
+    add_image_size('bpost2',800, 800, true); 
 
     function recipes_adjust_queries($query){
         if(!is_admin() AND is_post_type_archive('recipes') AND $query->is_main_query()){
@@ -40,12 +41,22 @@
 
     }
 
-    
+    set_post_thumbnail_size( 350, 350, false);
     add_filter( 'meta_content', 'wptexturize' );
     add_filter( 'meta_content', 'convert_smilies' );
     add_filter( 'meta_content', 'convert_chars' );
     add_filter( 'meta_content', 'wpautop' );
     add_filter( 'meta_content', 'shortcode_unautop' );
     add_filter( 'meta_content', 'prepend_attachment' );
+
+
+    function move_comment_field_to_bottom( $fields ) {
+        $comment_field = $fields['comment'];
+        unset( $fields['comment'] );
+        $fields['comment'] = $comment_field;
+        return $fields;
+    }
+
+    add_filter( 'comment_form_fields', 'move_comment_field_to_bottom' );
 
 ?>

@@ -16,8 +16,8 @@ while(have_posts()){
 
     <div class="row">
   <div class="leftcolumn">
-            <div class="card">
-                <div class="col-md-4">
+            <div class="card d-flex justify-content-center">
+                <div class="col-md-2">
                 <div class="HomePostsTips">
                           <?php the_post_thumbnail();?>
                         </div>

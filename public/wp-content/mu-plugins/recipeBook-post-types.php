@@ -3,7 +3,7 @@
  //registering our post types
  function recipeBook_post_types(){
     register_post_type('recipes',array(
-        'supports' => array('title', 'editor','excerpt','custom-fields','thumbnail'),
+        'supports' => array('title', 'editor','excerpt','custom-fields','thumbnail', 'comments', 'author'),
         'rewrite'=> array('slug' => 'recipe'),
         'has_archive' => true,
         'public' => true,
@@ -21,7 +21,7 @@
     ));
 
     register_post_type('tips',array(
-        'supports' => array('title', 'editor','excerpt','custom-fields','thumbnail'),
+        'supports' => array('title', 'editor','excerpt','custom-fields','thumbnail', 'comments', 'author'),
         'rewrite'=> array('slug' => 'tip'),
         'has_archive' => true,
         'public' => true, 
